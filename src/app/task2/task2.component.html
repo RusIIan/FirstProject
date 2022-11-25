@@ -1,0 +1,15 @@
+<button (click)="clickMessage()" class="btn">Add Server</button>
+<div >
+    <p class="createServer">No server was created</p>
+</div>
+<hr>
+<br>
+ 
+<script>
+    function clickMessage() {
+        let click = document.querySelector('.createServer');
+        if (click.innerHTML === "No server was created") {
+            click.innerHTML = "Server was created";
+        }
+    }
+</script>
