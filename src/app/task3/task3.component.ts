@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./task3.component.css']
 })
 export class Task3Component {
-  
+  isLoding: boolean = true;
+  constructor() {
+    this.time()
+  }
+  time() {
+    setTimeout(()=>this.isLoding=false,2000)
+  }
 }
